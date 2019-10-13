@@ -1,10 +1,10 @@
 <!doctype HTML>
 <html>
   <!-- A-Frame ライブラリの読み込み -->
-  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
    
   <!-- AR.js ライブラリの読み込み -->
-  <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.0/aframe/build/aframe-ar.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   <body style='margin:0px; overflow:hidden;'>
     
     <!-- こっからA-Frame -->
@@ -17,8 +17,8 @@
       </a-assets>
       
       <!-- マーカー状に描画するやつを指定 -->
-      <a-marker preset="custom" type='pattern' url='./marker/pattern-First.patt'>
-        <a-obj-model id="sample" src="#hanittan-obj" mtl="#hanittan-mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
+      <a-marker type='pattern' url='marker/pattern-First.patt'>
+        <a-obj-model id="hanittan" src="#hanittan-obj" mtl="#hanittan-mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
         <a-text value="HANITTAN IS HERE!!!" position="0 1 0" align="center"></a-text>
       </a-marker>
       
