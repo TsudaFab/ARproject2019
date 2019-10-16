@@ -15,6 +15,10 @@ img {
     max-width: 100%;
 }
 
+#img .camera_img:hover{
+     background-image: url(https://wp-p.info/reps/css-intermediate/img/04_02.jpg);
+}
+
 .title{
     padding: 0.2em 0.5em;
     margin: 2em 0;
