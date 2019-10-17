@@ -29,6 +29,13 @@
         <a-asset-item id="frog-obj" src="model_obj/Frog/frog.obj"></a-asset-item>
         <a-asset-item id="frog-mtl" src="model_obj/Frog/frog.mtl"></a-asset-item>
       </a-assets>
+
+      <!-- さかなくん -->
+      <a-assets>
+        <a-asset-item id="fish-obj" src="model_obj/Fish/fish.obj"></a-asset-item>
+        <a-asset-item id="fish-mtl" src="model_obj/Fish/fish.mtl"></a-asset-item>
+      </a-assets>
+      
       
       
       <!-- マーカー状に描画するやつを指定 -->
@@ -47,7 +54,7 @@
 
       <!-- Third -->
       <a-marker type='pattern' url='./marker/pattern-Third.patt'>
-	<a-obj-model id="frog" src="#frog-obj" mtl="#frog-mtl" position="0 0 0" scale="0.05 0.05 0.05" rotation="0 0 90"></a-obj-model>
+	<a-obj-model id="frog" src="#frog-obj" mtl="#frog-mtl" position="0 0 0" scale="0.05 0.05 0.05" rotation="90 0 90"></a-obj-model>
 	<a-text value="is" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
       
