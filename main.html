@@ -12,36 +12,42 @@
     <!-- こっからA-Frame -->
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
       
-      <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
+      <!-- はにったん -->
       <a-assets>
         <a-asset-item id="hanittan-obj" src="model_obj/Hanittan/hanittan.obj"></a-asset-item>
         <a-asset-item id="hanittan-mtl" src="model_obj/Hanittan/hanittan.mtl"></a-asset-item>
       </a-assets>
+
+      <!-- ねこちゃん -->
+      <a-assets>
+        <a-asset-item id="cat-obj" src="model_obj/Cat/cat.obj"></a-asset-item>
+        <a-asset-item id="cat-mtl" src="model_obj/Cat/cat.mtl"></a-asset-item>
+      </a-assets>
       
       <!-- マーカー状に描画するやつを指定 -->
 
-      <!-- First -->
+      <!-- First/Hanittan -->
       <a-marker type='pattern' url='./marker/pattern-First.patt'>
         <a-obj-model id="sample" src="#hanittan-obj" mtl="#hanittan-mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="-90 0 0"></a-obj-model>
-	<a-text value="Hello" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
+	<a-text value="Computer" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
 
       <!-- Second -->
       <a-marker type='pattern' url='./marker/pattern-Second.patt'>
-	<a-box position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="red"></a-box>
-	<a-text value="Computer" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
+	<a-obj-model id="sample" src="#cat-obj" mtl="#cat-mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="-90 0 0"></a-obj-model>
+	<a-text value="Science" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
 
       <!-- Third -->
       <a-marker type='pattern' url='./marker/pattern-Third.patt'>
 	<a-box position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="green"></a-box>
-	<a-text value="Science" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
+	<a-text value="is" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
       
       <!-- Fourth -->
       <a-marker type='pattern' url='./marker/pattern-Fourth.patt'>
 	<a-box position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="blue"></a-box>
-	<a-text value="World." position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
+	<a-text value="Wonderful!" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
       
       <!-- カメラ -->
