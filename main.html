@@ -23,24 +23,31 @@
         <a-asset-item id="cat-obj" src="model_obj/Cat/cat.obj"></a-asset-item>
         <a-asset-item id="cat-mtl" src="model_obj/Cat/cat.mtl"></a-asset-item>
       </a-assets>
+
+      <!-- かえるちゃん -->
+      <a-assets>
+        <a-asset-item id="frog-obj" src="model_obj/Frog/frog.obj"></a-asset-item>
+        <a-asset-item id="frog-mtl" src="model_obj/Frog/frog.mtl"></a-asset-item>
+      </a-assets>
+      
       
       <!-- マーカー状に描画するやつを指定 -->
 
       <!-- First/Hanittan -->
       <a-marker type='pattern' url='./marker/pattern-First.patt'>
-        <a-obj-model id="sample" src="#hanittan-obj" mtl="#hanittan-mtl" position="0 0 0" scale="0.2 0.2 0.2" rotation="-90 0 0"></a-obj-model>
+        <a-obj-model id="hanittan" src="#hanittan-obj" mtl="#hanittan-mtl" position="0 0 0" scale="0.2 0.2 0.2" rotation="-90 0 0"></a-obj-model>
 	<a-text value="Computer" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
 
       <!-- Second -->
       <a-marker type='pattern' url='./marker/pattern-Second.patt'>
-	<a-obj-model id="sample" src="#cat-obj" mtl="#cat-mtl" position="0 0 0" scale="0.05 0.05 0.05" rotation="-90 0 0"></a-obj-model>
+	<a-obj-model id="cat" src="#cat-obj" mtl="#cat-mtl" position="0 0 0" scale="0.05 0.05 0.05" rotation="-90 0 0"></a-obj-model>
 	<a-text value="Science" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
 
       <!-- Third -->
       <a-marker type='pattern' url='./marker/pattern-Third.patt'>
-	<a-box position="0 0.5 0" width="0.5" height="0.5" depth="0.5" color="green"></a-box>
+	<a-obj-model id="frog" src="#frog-obj" mtl="#frog-mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
 	<a-text value="is" position="0 1.3 0" rotation ="-90 0 0" align="center" color ="#111111"></a-text>
       </a-marker>
       
